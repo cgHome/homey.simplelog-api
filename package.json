@@ -1,0 +1,22 @@
+{
+  "name": "simple-log-api",
+  "version": "1.0.0",
+  "description": "SimpleLogApp API for Homey-Developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --ext .js --ignore-path .gitignore .",
+    "eslint:fix": "npm run eslint -- --fix"
+  },
+  "author": "Chris Gross <cghome@cflat-inc.org>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.4",
+    "eslint": "^8.34.0",
+    "eslint-config-athom": "^3.1.1",
+    "homey": "^2.33.6"
+  }
+}
