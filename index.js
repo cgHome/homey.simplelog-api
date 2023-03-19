@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports.SimpleLogApp = require('./lib/SimpleLogApp');
+module.exports.SimpleLogAPI = require('./lib/simpleLogAPI');
