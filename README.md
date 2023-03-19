@@ -20,17 +20,16 @@ const { SimpleLogAPI } = require('simplelog-api');
 module.exports = class MyApp extends App {
 
   async onInit() {
-    // Will be replaced by a mixin
-    // Example:
-    // this.logInfo('Info SimpleLogAPI test')
-    // this.logDebug('Debug SimpleLogAPI test')
-
     // Only for test
     SimpleLogAPI.getInstance(this.homey)
       .logInfo({ log: 'Info SimpleLogAPI test' });
     SimpleLogAPI.getInstance(this.homey)
       .logDebug({ log: 'Debug SimpleLogAPI test' });
-   
+
+    // Will be replaced by a mixin
+    // Example:
+    // this.logInfo('Info SimpleLogAPI test')
+    // this.logDebug('Debug SimpleLogAPI test')   
 ````
 
 ## Usefull Links (Temp)
