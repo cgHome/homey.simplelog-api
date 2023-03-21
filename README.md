@@ -35,3 +35,4 @@ module.exports = class MyApp extends App {
 ## Usefull Links (Temp)
 
 - https://blog.bitsrc.io/mixin-in-javascript-7a7eaa6d4920
+- https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/#bettermixinsthroughclassexpressions
