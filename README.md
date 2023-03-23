@@ -13,7 +13,7 @@ This module can be used in a Homey App to send logs to the [SimpleLogApp](https:
 ````
 npm install -S homey-simplelog-api
 
-// Only for test
+// Only for my test's
 npm install cghome/homey.simplelog-api
 ````
 
@@ -40,16 +40,6 @@ module.exports = class MyApp extends SimpleLogMixin(App)
 ```js
 this.logDebug('So easy it goes');
 ```
-
----
-
-## Migrations guide
-
-....
-
-### For a quick migration
-
-....
 
 ---
 
@@ -131,6 +121,27 @@ module.exports = class MyDriver extends SimpleLogMixin(Driver) {
 ```js
 // ToDo
 ```
+
+---
+
+## Migrations guide
+
+### Preferred
+
+Rename the methods, it's fast (global search&replace), the code is more readable and the method calls the console message at the end anyway.
+
+- this.log() [rename to] this.logInfo()
+- this.error() [rename to] this.logError()
+- this.debug() [rename to] this.logDebug()
+  
+### Quick and dirty to test the SimpleLogApp API (not preferred)
+
+It redirects the existing console messages:
+
+- this.log() -> this.logInfo()
+- this.error() -> this.logError()
+- this.debug() -> this.logDebug()
+
 ---
 
 ## Usefull Links
