@@ -1,12 +1,14 @@
 # SimpleLogApp API for Homey-Developers
 
-Do not use, the API is still in an alpha status
+**Do not use, the API is still in an alpha status**
+
+Minimal lightweight logging for Homey Apps
 
 This module can be used in a Homey App to send logs to the [SimpleLogApp](https://homey.app/de-ch/app/nl.nielsdeklerk.log/Simple-LOG)
 
 ---
 
-## How to implement SimpleLogApp API
+## Setting it up
 
 ### Install:
 
@@ -39,6 +41,35 @@ module.exports = class MyApp extends SimpleLogMixin(App)
 
 ```js
 this.logDebug('So easy it goes');
+```
+
+---
+
+## API
+
+**Error:** error conditions
+```js
+this.logError('logError-Message');
+```
+
+**Warning:** warning conditions
+```js
+this.logWarning('logWarning-Message');
+```
+
+**Notice:** normal but significant condition
+```js
+this.logNotice('logNotice-Message');
+```
+
+**Informational:** informational messages
+```js
+this.logInfo('logInfo-Message');
+```
+
+**Debug:** debug-level messages
+```js
+this.logDebug('logDebug-Message');
 ```
 
 ---
@@ -146,14 +177,14 @@ It redirects the existing console messages:
 
 ## Usefull Links
 
-### Loging
+### Logging
 
-- https://betterstack.com/community/guides/logging/nodejs-logging-best-practices/
+- [11 Best Practices for Logging in Node.js](https://betterstack.com/community/guides/logging/nodejs-logging-best-practices/)
 
 ### Mixin
 
-- https://blog.bitsrc.io/mixin-in-javascript-7a7eaa6d4920
-- https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/#bettermixinsthroughclassexpressions
+- [Mixins and Javascript: The Good, the Bad, and the Ugly.](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes)
+- [How to Create Mixins in JavaScript](https://blog.bitsrc.io/mixin-in-javascript-7a7eaa6d4920)
 
 ---
 
