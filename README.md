@@ -164,14 +164,6 @@ Rename the methods, it's fast (global search & replace), the code is more readab
 - this.log() [rename-to] this.logInfo()
 - this.error() [rename-to] this.logError()
 - this.debug() [rename-to] this.logDebug()
-  
-### Quick and dirty (just for testing)
-
-It redirects the existing console messages:
-
-- this.log() -> this.logInfo()
-- this.error() -> this.logError()
-- this.debug() -> this.logDebug()
 
 ---
 
