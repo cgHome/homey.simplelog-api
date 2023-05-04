@@ -99,7 +99,7 @@ if (process.env.DEBUG === '1') {
 module.exports = class MyApp extends SimpleLogMixin(App) {
 
   onInit() {
-    this.logDebug(`App - v${this.homey.manifest.version} is starting...`);
+    this.logDebug('onInit()');
 
     // ...
 
@@ -183,8 +183,6 @@ Rename the methods, it's fast (global search & replace), the code is more readab
 ## ToDo
 
 - TypeScript integration
-- Note when the homey app is "SimpleLogApp ready"
-- Register Homey App in SimpleLogApp
 - Add uncaughtException or unhandledRejection to log [see](https://betterstack.com/community/guides/logging/nodejs-logging-best-practices/).
 
 ---
