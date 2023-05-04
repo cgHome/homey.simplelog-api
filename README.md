@@ -15,11 +15,9 @@ This module can be used in a Homey App to send logs to the [SimpleLogApp](https:
 ````
 npm install -S homey-simplelog-api
 
-// Only for my test's
-npm install cghome/homey.simplelog-api
 ````
 
-### Add permisson: 
+### Add permission:  
 
 ```json
  "permissions": ["homey:app:nl.nielsdeklerk.log"]
@@ -167,7 +165,7 @@ Rename the methods, it's fast (global search & replace), the code is more readab
 
 ---
 
-## Usefull Links
+## Useful Links
 
 ### Logging
 
