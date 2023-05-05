@@ -1,5 +1,5 @@
 {
-  "name": "simplelog-api",
+  "name": "homey-simplelog-api",
   "version": "1.0.0",
   "description": "SimpleLogApp API for Homey-Developers",
   "main": "index.js",
