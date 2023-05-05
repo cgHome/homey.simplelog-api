@@ -1,6 +1,6 @@
 # SimpleLogApp API for Homey-Developers
 
-**Do not use, the API is still in an alpha status**
+**Warning: This API is still in beta**
 
 Minimal lightweight logging for Homey Apps
 
@@ -13,8 +13,7 @@ This module can be used in a Homey App to send logs to the [SimpleLogApp](https:
 ### Install:
 
 ````
-npm install -S homey-simplelog-api
-
+npm install homey-simplelog-api
 ````
 
 ### Add permission:  
@@ -26,7 +25,7 @@ npm install -S homey-simplelog-api
 ### Import package:
 
 ```js
-const { SimpleLogMixin } = require('simplelog-api');
+const { SimpleLogMixin } = require('homey-simplelog-api');
 ```
 
 ### Define SimpleLog mixim:
@@ -81,7 +80,7 @@ this.logDebug('logDebug-Message');
 
 const { App } = require('homey');
 
-const { SimpleLogMixin } = require('simplelog-api');
+const { SimpleLogMixin } = require('homey-simplelog-api');
 
 // Development
 if (process.env.DEBUG === '1') {
@@ -113,7 +112,7 @@ module.exports = class MyApp extends SimpleLogMixin(App) {
 
 const { Device } = require('homey');
 
-const { SimpleLogMixin } = require('simplelog-api');
+const { SimpleLogMixin } = require('homey-simplelog-api');
 
 module.exports = class MyDevice extends SimpleLogMixin(Device) {
 
@@ -131,7 +130,7 @@ module.exports = class MyDevice extends SimpleLogMixin(Device) {
 ```js
 const { Driver } = require('homey');
 
-const { SimpleLogMixin } = require('simplelog-api');
+const { SimpleLogMixin } = require('homey-simplelog-api');
 
 module.exports = class MyDriver extends SimpleLogMixin(Driver) {
 
@@ -142,7 +141,6 @@ module.exports = class MyDriver extends SimpleLogMixin(Driver) {
 
   }
 }
-
 ```
 
 ### Homey SimpleClass or Object
