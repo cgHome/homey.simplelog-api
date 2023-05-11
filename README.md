@@ -155,11 +155,11 @@ module.exports = class MyDriver extends SimpleLogMixin(Driver) {
 
 ### Preferred
 
-Rename the methods, it's fast (global search & replace), the code is more readable and the method calls the console message at the end anyway.
+Rename the methods, it's fast (global search & replace), the code is more readable and **the method calls the console message at the end anyway**.
 
-- this.log() [rename-to] this.logInfo()
-- this.error() [rename-to] this.logError()
-- this.debug() [rename-to] this.logDebug()
+- this.log() > (rename-to) > this.logInfo()
+- this.error() > (rename-to) > this.logError()
+- this.debug() > (rename-to) > this.logDebug()
 
 ---
 
