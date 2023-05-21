@@ -31,7 +31,7 @@ const { SimpleLogMixin } = require('homey-simplelog-api');
 ### Define SimpleLog mixim:
 
 ```js
-module.exports = class MyApp extends SimpleLogMixin(App)
+module.exports = class MyApp extends SimpleLogMixin(Homey.App)
 ```
 
 ### Use it:
@@ -78,7 +78,7 @@ this.logDebug('logDebug-Message');
 ```js
 'use strict';
 
-const { App } = require('homey');
+const Homey = require('homey');
 
 const { SimpleLogMixin } = require('homey-simplelog-api');
 
@@ -93,9 +93,9 @@ if (process.env.DEBUG === '1') {
   }
 }
 
-module.exports = class MyApp extends SimpleLogMixin(App) {
+module.exports = class App extends SimpleLogMixin(Homey.App) {
 
-  onInit() {
+  async onInit() {
     this.logDebug('onInit()');
 
     // ...
@@ -110,13 +110,13 @@ module.exports = class MyApp extends SimpleLogMixin(App) {
 ```js
 'use strict';
 
-const { Device } = require('homey');
+const Homey = require('homey');
 
 const { SimpleLogMixin } = require('homey-simplelog-api');
 
-module.exports = class MyDevice extends SimpleLogMixin(Device) {
+module.exports = class Driver extends SimpleLogMixin(Homey.Driver) {
 
-  onInit(options = {}) {
+  async onInit(options = {}) {
     this.logDebug('onInit()');
 
     // ...
@@ -128,13 +128,13 @@ module.exports = class MyDevice extends SimpleLogMixin(Device) {
 ### Homey device
 
 ```js
-const { Driver } = require('homey');
+const Homey = require('homey');
 
 const { SimpleLogMixin } = require('homey-simplelog-api');
 
-module.exports = class MyDriver extends SimpleLogMixin(Driver) {
+module.exports = class Device extends SimpleLogMixin(Homey.Device) {
 
-  onInit() {
+  async onInit() {
     this.logDebug('onInit()');
 
     // ...
