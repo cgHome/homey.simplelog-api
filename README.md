@@ -1,7 +1,5 @@
 # SimpleLogApp API for Homey-Developers
 
-**Warning: This API is still in beta**
-
 Minimal lightweight logging for Homey Apps
 
 This module can be used in a Homey App to send logs to the [SimpleLogApp](https://homey.app/de-ch/app/nl.nielsdeklerk.log/Simple-LOG)
