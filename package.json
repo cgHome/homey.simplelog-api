@@ -1,6 +1,6 @@
 {
   "name": "homey-simplelog-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "SimpleLogApp API for Homey-Developers",
   "main": "index.js",
   "scripts": {
