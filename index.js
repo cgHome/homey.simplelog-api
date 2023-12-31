@@ -1,4 +1,6 @@
 'use strict';
 
-// module.exports.SimpleLogAPI = require('./lib/simpleLogAPI');
-module.exports.SimpleLogMixin = require('./lib/simpleLogMixin');
+const SimpleLogMixin = require('./lib/simpleLogMixin');
+const { SYSLOG_SEVERITY, SYSLOG_FACILITY } = require('./lib/constants');
+
+module.exports = { SimpleLogMixin, SYSLOG_SEVERITY, SYSLOG_FACILITY };
